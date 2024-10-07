@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Styles To text</title>
+</head>
+<body>
+    <div id="first">
+        <p>This is simple paragraph </p>
+    </div>
+    <img src="codegnan.jpeg" alt="codegnan"  id="image">
+    
+    <script >
+        let image1=document.getElementById("image");
+        image1.style.width="500px"
+        image1.getAttribute("id");
+        image1.setAttribute('id','narender')
+        console.log(image1.getAttribute('id'))
+
+        let getId=document.getElementById("first")
+        console.log(getId.getAttribute('id'))//first
+        console.log(getId.setAttribute('first','Hello'))
+        console.log(getId.getAttribute('first'))
+        getId.style.backgroundColor="blue";
+        getId.setAttribute('class','OneTwo')
+        console.log(getId.getAttribute('class'))
+        getId.style.color="white"
+
+    </script>
+</body>
+</html>
